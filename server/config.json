@@ -1,0 +1,36 @@
+{
+  "inbounds": [
+    {
+      "port": 443,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "YOUR_UUID_HERE"
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "certificates": [
+            {
+              "certificateFile": "/etc/letsencrypt/live/YOUR_DOMAIN/fullchain.pem",
+              "keyFile": "/etc/letsencrypt/live/YOUR_DOMAIN/privkey.pem"
+            }
+          ]
+        },
+        "wsSettings": {
+          "path": "/vpn"
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom"
+    }
+  ]
+}

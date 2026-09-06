@@ -1,0 +1,3 @@
+# paste your uuid and domain here then import this into your application
+
+vless://YOUR_UUID_HERE@YOUR_DOMAIN:443?encryption=none&security=tls&type=ws&path=%2Fvpn&sni=YOUR_DOMAIN#MyVPN
