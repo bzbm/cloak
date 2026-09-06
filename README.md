@@ -44,3 +44,10 @@ client (Mac/phone) --VLESS/WS/TLS:443--> Sophos --passes as HTTPS--> Azure VM (X
 Got it to ~180mbps on a locked-down LAN. Not the full 800mbps the connection can do, but the B1ls VM is a shared vCPU so that's the ceiling. Fine for browsing, video, everything normal.
 
 Doesn't work: Discord VC, Roblox, anything UDP-based — Sophos kills all UDP regardless, and this tunnel is TCP-only. Could theoretically wrap UDP in TCP but the latency hit isn't worth it.
+
+## updates
+
+date this project was started : 14/03/2026
+date this project was finished : 15/03/2026
+date this repo went public : 07/09/2026
+date this repo was updated : 07/09/2026
